@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  application:
+    container_name: broadsay
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ".:/app"
+    ports:
+      - "8060:8060"
+    environment:
+      - NODE_ENV=development

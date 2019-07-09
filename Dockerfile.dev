@@ -1,0 +1,4 @@
+FROM node:10-alpine
+WORKDIR /app
+CMD ["npm", "i"]
+CMD ["npm", "start"]
